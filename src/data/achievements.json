@@ -1,0 +1,14 @@
+[
+  { "id": "first_steps", "title": "First Steps", "description": "Complete any 1 activity", "icon": "star", "rarity": "common", "xpReward": 25, "unlockedAt": null },
+  { "id": "bookworm_5", "title": "Bookworm", "description": "Read 5 Book worm passages", "icon": "book", "rarity": "common", "xpReward": 25, "unlockedAt": null },
+  { "id": "quiz_perfect", "title": "Flawless", "description": "Score 100% on a Pop up Quiz!", "icon": "trophy", "rarity": "rare", "xpReward": 25, "unlockedAt": null },
+  { "id": "speed_demon", "title": "Speed Demon", "description": "Finish a quiz with all answers under 3s", "icon": "star", "rarity": "rare", "xpReward": 25, "unlockedAt": null },
+  { "id": "grammar_guardian", "title": "Grammar Guardian", "description": "Complete all Grammar topics", "icon": "scroll", "rarity": "epic", "xpReward": 25, "unlockedAt": null },
+  { "id": "good_ear", "title": "Good Ear", "description": "Complete 5 Listening clips", "icon": "headphones", "rarity": "common", "xpReward": 25, "unlockedAt": null },
+  { "id": "silver_tongue", "title": "Silver Tongue", "description": "Self-rate 3★ on 10 Speaking prompts", "icon": "mic", "rarity": "rare", "xpReward": 25, "unlockedAt": null },
+  { "id": "streak_7", "title": "Week Warrior", "description": "Reach a 7-day streak", "icon": "star", "rarity": "rare", "xpReward": 25, "unlockedAt": null },
+  { "id": "streak_30", "title": "Unstoppable", "description": "Reach a 30-day streak", "icon": "trophy", "rarity": "epic", "xpReward": 25, "unlockedAt": null },
+  { "id": "level_10", "title": "Scholar", "description": "Reach Level 10", "icon": "trophy", "rarity": "epic", "xpReward": 25, "unlockedAt": null },
+  { "id": "all_rounder", "title": "All-Rounder", "description": "Complete ≥ 1 item in each of the 5 categories", "icon": "sword", "rarity": "rare", "xpReward": 25, "unlockedAt": null },
+  { "id": "night_owl", "title": "Night Owl", "description": "Complete an activity after midnight (local)", "icon": "star", "rarity": "common", "xpReward": 25, "unlockedAt": null }
+]

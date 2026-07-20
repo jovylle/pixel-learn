@@ -1,0 +1,7 @@
+[
+  { "id": "bookworm", "label": "Book worm", "icon": "book", "route": "/bookworm" },
+  { "id": "quiz", "label": "Pop up Quiz!", "icon": "lightning", "route": "/quiz" },
+  { "id": "grammar", "label": "Grammar", "icon": "pencil", "route": "/grammar" },
+  { "id": "listening", "label": "Listening", "icon": "headphones", "route": "/listening" },
+  { "id": "speaking", "label": "Speaking", "icon": "mic", "route": "/speaking" }
+]

@@ -1,0 +1,85 @@
+@import 'tailwindcss';
+
+/* Pixel fonts — Press Start 2P for headings/logo, Pixelify Sans for body/UI */
+@import '@fontsource/press-start-2p';
+@import '@fontsource/pixelify-sans';
+@import '@fontsource/pixelify-sans/500.css';
+@import '@fontsource/pixelify-sans/600.css';
+@import '@fontsource/pixelify-sans/700.css';
+
+/*
+ * Palette from PLAN.md — the single source of truth for hex values.
+ * These become real Tailwind utilities via Tailwind v4's CSS-first `@theme`:
+ * bg-void, bg-navbar, bg-panel-bg, border-panel-border, text-accent-blue,
+ * text-text-primary, text-text-secondary, text-accent-gold, bg-progress-track,
+ * bg-slime-blue. Components must reference these semantic classes, never
+ * raw hex values.
+ */
+@theme {
+  --color-void: #070a1a;
+  --color-navbar: #0b1230;
+  --color-panel-bg: #0e1533;
+  --color-panel-border: #26315e;
+  --color-accent-blue: #4f8cff;
+  --color-text-primary: #f2f4fa;
+  --color-text-secondary: #93a0c9;
+  --color-accent-gold: #f0b429;
+  --color-progress-track: #0a0f24;
+  --color-slime-blue: #3d7dff;
+
+  --font-pixel: 'Press Start 2P', 'Courier New', monospace;
+  --font-body: 'Pixelify Sans', system-ui, sans-serif;
+
+  /* pixel-art corners: slightly rounded, never fully rounded */
+  --radius-pixel: 6px;
+  --radius-pixel-sm: 4px;
+}
+
+@layer base {
+  html,
+  body,
+  #app {
+    height: 100%;
+  }
+
+  body {
+    background-color: var(--color-void);
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+    image-rendering: pixelated;
+  }
+
+  /* Pixel-styled focus ring, kept visible everywhere per ONBOARDING_AND_POLISH.md */
+  :focus-visible {
+    outline: 2px solid var(--color-accent-blue);
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .font-pixel {
+    font-family: var(--font-pixel);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes drift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-40px);
+  }
+}

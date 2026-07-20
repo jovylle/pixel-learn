@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "pixel-learn",
+  "compatibility_date": "2026-07-20",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  },
+  "routes": [
+    { "pattern": "pixel-learn.uft1.com", "custom_domain": true }
+  ]
+}

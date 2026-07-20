@@ -1,0 +1,6 @@
+[
+  { "id": "speaking:greetings", "category": "speaking", "title": "Greetings", "level": 1, "targetText": "Good morning! How are you today?" },
+  { "id": "speaking:directions", "category": "speaking", "title": "Asking for Directions", "level": 1, "targetText": "Excuse me, where is the nearest station?" },
+  { "id": "speaking:small-talk", "category": "speaking", "title": "Small Talk", "level": 2, "targetText": "The weather has been lovely this week." },
+  { "id": "speaking:ordering-food", "category": "speaking", "title": "Ordering Food", "level": 2, "targetText": "I would like the soup and a glass of water, please." }
+]

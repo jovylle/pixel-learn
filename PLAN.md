@@ -146,6 +146,42 @@ look.
 6. Responsive pass (mobile stacking).
 7. `git init`, commit, create public GitHub repo `pixel-learn`, push to
    `main`.
+8. Deploy to Cloudflare via Wrangler (see Deployment below), live at
+   `pixel-learn.uft1.com`.
+
+## Deployment
+
+Static SPA — no backend routes — so this ships as a **Worker with static
+assets** (not Pages), landing on a subdomain of the already-owned `uft1.com`
+zone (already on this Cloudflare account, used elsewhere e.g. `pic.uft1.com`).
+
+`wrangler.jsonc`:
+```jsonc
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "pixel-learn",
+  "compatibility_date": "<today, keep within ~30 days at deploy time>",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  },
+  "routes": [
+    { "pattern": "pixel-learn.uft1.com", "custom_domain": true }
+  ]
+}
+```
+
+- `not_found_handling: single-page-application` serves `index.html` for
+  unmatched routes — required since Vue Router uses client-side routing.
+- `routes[].custom_domain: true` — Cloudflare creates the DNS record and TLS
+  cert automatically; no manual DNS step needed against the `uft1.com` zone.
+- Build + deploy:
+  ```bash
+  npm run build
+  npx wrangler deploy
+  ```
+- No KV/D1/R2 bindings needed for v1 — everything is static assets +
+  `localStorage`, per `DATA_MODEL.md`.
 
 ## Open Questions
 - None blocking v1 — mock data only, no backend/auth for this iteration.

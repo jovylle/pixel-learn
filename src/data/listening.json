@@ -1,0 +1,6 @@
+[
+  { "id": "listening:cafe-order", "category": "listening", "title": "Ordering at a Cafe", "level": 1, "durationSeconds": 45 },
+  { "id": "listening:train-station", "category": "listening", "title": "At the Train Station", "level": 1, "durationSeconds": 60 },
+  { "id": "listening:job-interview", "category": "listening", "title": "A Short Interview", "level": 2, "durationSeconds": 75 },
+  { "id": "listening:weather-report", "category": "listening", "title": "Weather Report", "level": 2, "durationSeconds": 50 }
+]

@@ -1,0 +1,7 @@
+[
+  { "id": "grammar:present-simple", "category": "grammar", "title": "Present Simple", "level": 1, "order": 1, "masteryThreshold": 70 },
+  { "id": "grammar:articles", "category": "grammar", "title": "Articles", "level": 1, "order": 2, "masteryThreshold": 70 },
+  { "id": "grammar:prepositions", "category": "grammar", "title": "Prepositions", "level": 2, "order": 3, "masteryThreshold": 70 },
+  { "id": "grammar:past-simple", "category": "grammar", "title": "Past Simple", "level": 2, "order": 4, "masteryThreshold": 70 },
+  { "id": "grammar:comparatives", "category": "grammar", "title": "Comparatives", "level": 3, "order": 5, "masteryThreshold": 70 }
+]

@@ -1,0 +1,5 @@
+[
+  { "id": "quiz:vocab-1", "category": "quiz", "title": "Vocabulary Round I", "level": 1, "perQuestionSeconds": 10 },
+  { "id": "quiz:vocab-2", "category": "quiz", "title": "Vocabulary Round II", "level": 2, "perQuestionSeconds": 10 },
+  { "id": "quiz:spelling-1", "category": "quiz", "title": "Spelling Sprint", "level": 2, "perQuestionSeconds": 8 }
+]

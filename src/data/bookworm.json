@@ -1,0 +1,6 @@
+[
+  { "id": "bookworm:the-lantern", "category": "bookworm", "title": "The Lantern", "level": 1, "estReadSeconds": 180 },
+  { "id": "bookworm:the-old-bridge", "category": "bookworm", "title": "The Old Bridge", "level": 1, "estReadSeconds": 210 },
+  { "id": "bookworm:market-day", "category": "bookworm", "title": "Market Day", "level": 2, "estReadSeconds": 240 },
+  { "id": "bookworm:the-quiet-forest", "category": "bookworm", "title": "The Quiet Forest", "level": 2, "estReadSeconds": 300 }
+]
