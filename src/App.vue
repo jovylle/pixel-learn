@@ -20,6 +20,11 @@ const showChrome = computed(() => route.name !== 'welcome')
     </main>
     <footer v-if="showChrome" class="relative py-6 text-center font-body text-xs text-text-secondary">
       <a href="https://pixel-learn.uft1.com" class="hover:text-accent-blue">pixel-learn.uft1.com</a>
+      <span class="mx-2">·</span>
+      <span>
+        Feedback / issues:
+        <a href="mailto:support@uft1.com" class="hover:text-accent-blue">support@uft1.com</a>
+      </span>
     </footer>
   </div>
 </template>
