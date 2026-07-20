@@ -11,6 +11,7 @@ data comes from the mock store (`DATA_MODEL.md`).
 
 | Path | Name | Feature | Notes |
 |---|---|---|---|
+| `/welcome` | `welcome` | — | First-run naming/avatar screen; see `ONBOARDING_AND_POLISH.md`. Redirect target when no `User` exists yet |
 | `/` | `dashboard` | — | The main screen from PLAN.md |
 | `/bookworm` | `bookworm-library` | Book worm | Library grid |
 | `/bookworm/:id` | `bookworm-reader` | Book worm | Reader + comprehension |

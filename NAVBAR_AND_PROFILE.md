@@ -82,6 +82,7 @@ All persist to the local store (`DATA_MODEL.md`):
 | Username / display name | text input | Updates `User.username` (drives Hero greeting + navbar) |
 | Avatar | seed input / "randomize" | Updates `User.avatarSeed` (DiceBear) |
 | Default reading font size | small/med/large toggle | Default for Book worm reader |
+| Sound | on/off toggle | SFX + ambient music mute (see `ONBOARDING_AND_POLISH.md`); SFX default on, music default off |
 | Reset progress | button (confirm modal) | Clears `progress`/`activity`, re-locks achievements, resets XP/streak, re-seeds |
 
 > **Future / out of scope for v1:** account email, password, theme switching

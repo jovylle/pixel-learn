@@ -166,6 +166,9 @@ the dashboard is broken out into these companion docs:
   table + per-page component trees reusing the panel/card primitives.
 - **[NAVBAR_AND_PROFILE.md](./NAVBAR_AND_PROFILE.md)** — hamburger nav, avatar
   dropdown, and the Profile/Settings page (logout is a v1 no-op).
+- **[ONBOARDING_AND_POLISH.md](./ONBOARDING_AND_POLISH.md)** — first-run
+  naming/avatar flow, sound & music system, accessibility/motion notes, and
+  what's worth unit-testing.
 
 All companion docs inherit this file's palette, fonts, and the "mock data only,
 no backend for v1" constraint; anything beyond that is explicitly labeled
