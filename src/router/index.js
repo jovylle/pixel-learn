@@ -1,9 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import { useAppStore } from '@/stores/app'
+import BookwormLibraryView from '@/views/BookwormLibraryView.vue'
+import BookwormReaderView from '@/views/BookwormReaderView.vue'
 import DashboardView from '@/views/DashboardView.vue'
+import GrammarLessonView from '@/views/GrammarLessonView.vue'
+import GrammarTopicsView from '@/views/GrammarTopicsView.vue'
+import ListeningClipView from '@/views/ListeningClipView.vue'
+import ListeningListView from '@/views/ListeningListView.vue'
 import NotFoundView from '@/views/NotFoundView.vue'
 import PlaceholderView from '@/views/PlaceholderView.vue'
+import QuizView from '@/views/QuizView.vue'
+import SpeakingListView from '@/views/SpeakingListView.vue'
+import SpeakingPracticeView from '@/views/SpeakingPracticeView.vue'
 import WelcomeView from '@/views/WelcomeView.vue'
 
 // Full route table per ROUTES_AND_COMPONENTS.md. Only /welcome and / (the
@@ -15,55 +24,53 @@ const routes = [
   {
     path: '/bookworm',
     name: 'bookworm-library',
-    component: PlaceholderView,
-    meta: { title: 'Book worm', icon: 'book' },
+    component: BookwormLibraryView,
   },
   {
     path: '/bookworm/:id',
     name: 'bookworm-reader',
-    component: PlaceholderView,
-    meta: { title: 'Book worm — Reader', icon: 'book' },
+    component: BookwormReaderView,
   },
   {
     path: '/quiz',
     name: 'quiz',
-    component: PlaceholderView,
+    component: QuizView,
     meta: { title: 'Pop up Quiz!', icon: 'lightning' },
   },
   {
     path: '/grammar',
     name: 'grammar-topics',
-    component: PlaceholderView,
+    component: GrammarTopicsView,
     meta: { title: 'Grammar', icon: 'pencil' },
   },
   {
     path: '/grammar/:id',
     name: 'grammar-lesson',
-    component: PlaceholderView,
+    component: GrammarLessonView,
     meta: { title: 'Grammar — Lesson', icon: 'pencil' },
   },
   {
     path: '/listening',
     name: 'listening-list',
-    component: PlaceholderView,
+    component: ListeningListView,
     meta: { title: 'Listening', icon: 'headphones' },
   },
   {
     path: '/listening/:id',
     name: 'listening-clip',
-    component: PlaceholderView,
+    component: ListeningClipView,
     meta: { title: 'Listening — Player', icon: 'headphones' },
   },
   {
     path: '/speaking',
     name: 'speaking-list',
-    component: PlaceholderView,
+    component: SpeakingListView,
     meta: { title: 'Speaking', icon: 'mic' },
   },
   {
     path: '/speaking/:id',
     name: 'speaking-practice',
-    component: PlaceholderView,
+    component: SpeakingPracticeView,
     meta: { title: 'Speaking — Practice', icon: 'mic' },
   },
   {

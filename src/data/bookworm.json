@@ -1,6 +1,231 @@
 [
-  { "id": "bookworm:the-lantern", "category": "bookworm", "title": "The Lantern", "level": 1, "estReadSeconds": 180 },
-  { "id": "bookworm:the-old-bridge", "category": "bookworm", "title": "The Old Bridge", "level": 1, "estReadSeconds": 210 },
-  { "id": "bookworm:market-day", "category": "bookworm", "title": "Market Day", "level": 2, "estReadSeconds": 240 },
-  { "id": "bookworm:the-quiet-forest", "category": "bookworm", "title": "The Quiet Forest", "level": 2, "estReadSeconds": 300 }
+  {
+    "id": "bookworm:the-lantern",
+    "category": "bookworm",
+    "title": "The Lantern",
+    "level": 1,
+    "estReadSeconds": 180,
+    "body": "Theo lived in a small house at the edge of the village. One rainy afternoon, he climbed the ladder to his grandmother's attic to look for an old blanket. Instead, he found a dusty brass lantern tucked behind a wooden trunk.\n\n\"Grandma, what is this?\" he asked, carrying it down the stairs.\n\nHis grandmother smiled. \"That lantern belonged to your grandfather. He carried it every night when he walked home from the mill. It always found the way, even in the dark.\"\n\nThat evening, the power went out across the whole village. Theo remembered the lantern. He filled it with a little oil, lit the wick, and a warm golden light filled the room. His little sister clapped her hands.\n\nWhen his mother asked him to fetch eggs from the henhouse, Theo carried the lantern outside. The yard was pitch black, but the lantern's glow lit the path perfectly. He found the henhouse without stumbling once.\n\n\"See?\" said his grandmother when he returned. \"It still knows the way.\"\n\nFrom that night on, Theo kept the lantern by his bed. Every time the lights went out, he was ready.",
+    "questions": [
+      {
+        "id": "bookworm:the-lantern:q1",
+        "prompt": "Where did Theo find the lantern?",
+        "options": ["In the henhouse", "In the attic", "In the kitchen", "At the mill"],
+        "correctIndex": 1,
+        "explanation": "Theo climbed to the attic to look for a blanket and found the lantern there."
+      },
+      {
+        "id": "bookworm:the-lantern:q2",
+        "prompt": "Who used to carry the lantern?",
+        "options": ["Theo's sister", "Theo's mother", "Theo's grandfather", "Theo's grandmother"],
+        "correctIndex": 2,
+        "explanation": "Theo's grandmother explains it belonged to his grandfather."
+      },
+      {
+        "id": "bookworm:the-lantern:q3",
+        "prompt": "Why did Theo need the lantern that evening?",
+        "options": [
+          "The power went out",
+          "He was lost in the forest",
+          "It was his birthday",
+          "His grandmother asked him to clean it"
+        ],
+        "correctIndex": 0,
+        "explanation": "A village-wide power outage happened that evening."
+      },
+      {
+        "id": "bookworm:the-lantern:q4",
+        "prompt": "What was Theo sent to fetch using the lantern?",
+        "options": ["Firewood", "Water", "Eggs", "Blankets"],
+        "correctIndex": 2,
+        "explanation": "His mother asked him to fetch eggs from the henhouse."
+      }
+    ]
+  },
+  {
+    "id": "bookworm:the-old-bridge",
+    "category": "bookworm",
+    "title": "The Old Bridge",
+    "level": 1,
+    "estReadSeconds": 210,
+    "body": "The wooden bridge over Miller's Creek had stood for fifty years. It creaked loudly whenever someone crossed it, and most people in the village believed it was about to fall down.\n\n\"Take the long way around,\" the grown-ups always warned the children. \"That bridge is too old.\"\n\nBut every day, twins Mara and Sam watched the bridge from the riverbank. They noticed something strange: even though it creaked, it never actually moved. The wood was gray and worn, but the thick ropes holding it together looked strong.\n\nOne morning, an old carpenter named Mr. Diallo arrived in the village. He listened to the villagers complain about the noisy bridge.\n\n\"May I look at it?\" he asked.\n\nHe walked slowly across the bridge, tapping each plank with a small hammer. Then he laughed. \"This bridge is not weak,\" he said. \"It is simply old and dry. A little oil on the joints, and it will be quiet as a mouse.\"\n\nThe villagers were surprised. Mr. Diallo spent the afternoon oiling the wooden joints and tightening the ropes. By evening, the bridge no longer creaked at all.\n\nMara and Sam were the first to cross it in silence. \"We knew it was strong,\" Mara whispered, grinning at her brother.\n\nFrom then on, the bridge became the village's favorite shortcut, and nobody feared it again.",
+    "questions": [
+      {
+        "id": "bookworm:the-old-bridge:q1",
+        "prompt": "Why were the villagers afraid of the bridge?",
+        "options": [
+          "It creaked loudly",
+          "It was painted a strange color",
+          "It was too narrow",
+          "It had no ropes at all"
+        ],
+        "correctIndex": 0,
+        "explanation": "The loud creaking made people think the bridge was unsafe."
+      },
+      {
+        "id": "bookworm:the-old-bridge:q2",
+        "prompt": "What did Mara and Sam notice about the bridge?",
+        "options": [
+          "It moved a lot when crossed",
+          "It never actually moved despite the noise",
+          "It was falling apart",
+          "Nobody ever crossed it"
+        ],
+        "correctIndex": 1,
+        "explanation": "The twins noticed the bridge didn't move even though it was noisy."
+      },
+      {
+        "id": "bookworm:the-old-bridge:q3",
+        "prompt": "Who fixed the bridge?",
+        "options": ["Mara", "Sam", "Mr. Diallo", "A village leader"],
+        "correctIndex": 2,
+        "explanation": "The carpenter Mr. Diallo oiled and tightened the bridge."
+      },
+      {
+        "id": "bookworm:the-old-bridge:q4",
+        "prompt": "What was actually wrong with the bridge?",
+        "options": [
+          "It was rotten",
+          "It was too old and dry, not weak",
+          "The ropes were missing",
+          "It was built wrong"
+        ],
+        "correctIndex": 1,
+        "explanation": "Mr. Diallo explained the bridge was simply old and dry, not weak."
+      },
+      {
+        "id": "bookworm:the-old-bridge:q5",
+        "prompt": "How did the villagers feel about the bridge at the end?",
+        "options": [
+          "They still avoided it",
+          "They tore it down",
+          "They stopped fearing it and used it often",
+          "They asked Mr. Diallo to rebuild it"
+        ],
+        "correctIndex": 2,
+        "explanation": "The bridge became the village's favorite shortcut and nobody feared it again."
+      }
+    ]
+  },
+  {
+    "id": "bookworm:market-day",
+    "category": "bookworm",
+    "title": "Market Day",
+    "level": 2,
+    "estReadSeconds": 240,
+    "body": "Every Saturday, Lena woke up before sunrise to help her mother set up their vegetable stall at the town market. This week, for the first time, her mother let her run the stall alone while she visited the bakery next door.\n\n\"Remember,\" her mother said, \"tomatoes are two coins a basket, and carrots are one coin a bunch. If someone wants to bargain, you may lower the price a little, but never below what we paid the farmer.\"\n\nLena nodded nervously and arranged the vegetables in neat rows. Soon, a tall man in a green coat approached.\n\n\"How much for the tomatoes?\" he asked.\n\n\"Two coins a basket,\" Lena answered, trying to sound confident.\n\nThe man frowned. \"I'll give you one coin.\"\n\nLena remembered her mother's advice. \"I can do one and a half, but not less. These tomatoes were picked this morning.\"\n\nThe man considered this, then smiled and agreed. He bought three baskets.\n\nThroughout the morning, Lena sold carrots to a baker, onions to an old fisherman, and a whole crate of tomatoes to the owner of the town's only restaurant. She counted her coins carefully after every sale, just as her mother had taught her.\n\nWhen her mother returned, she found the stall almost empty and a proud smile on Lena's face.\n\n\"You did wonderfully,\" her mother said, counting the coins. \"You even earned a little extra by bargaining well.\"\n\nLena beamed. Market day had never felt so exciting.",
+    "questions": [
+      {
+        "id": "bookworm:market-day:q1",
+        "prompt": "What did Lena's mother let her do for the first time?",
+        "options": [
+          "Bake bread",
+          "Run the vegetable stall alone",
+          "Go fishing",
+          "Cook dinner"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "bookworm:market-day:q2",
+        "prompt": "According to her mother's rule, how low could Lena lower a price?",
+        "options": [
+          "As low as the customer wanted",
+          "Never below what they paid the farmer",
+          "Only on Saturdays",
+          "Only for baskets, not bunches"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "bookworm:market-day:q3",
+        "prompt": "What price did Lena agree on with the man in the green coat?",
+        "options": ["One coin", "Two coins", "One and a half coins", "Three coins"],
+        "correctIndex": 2,
+        "explanation": "Lena offered one and a half coins as a compromise."
+      },
+      {
+        "id": "bookworm:market-day:q4",
+        "prompt": "Who bought the crate of tomatoes?",
+        "options": [
+          "The baker",
+          "The old fisherman",
+          "The man in the green coat",
+          "The owner of the town's restaurant"
+        ],
+        "correctIndex": 3
+      },
+      {
+        "id": "bookworm:market-day:q5",
+        "prompt": "How did Lena's mother react when she returned?",
+        "options": [
+          "She was disappointed",
+          "She was proud of Lena",
+          "She scolded Lena for bargaining",
+          "She didn't notice the empty stall"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "bookworm:the-quiet-forest",
+    "category": "bookworm",
+    "title": "The Quiet Forest",
+    "level": 2,
+    "estReadSeconds": 300,
+    "body": "Ren and his younger sister Mika had heard grown-ups call the forest behind their house \"the quiet forest,\" but they had never been brave enough to explore it themselves. One sunny Sunday, with their parents' permission, they finally packed a small bag with water, bread, and a compass and set off along the narrow dirt path.\n\nAt first, the forest seemed ordinary — tall pines, patches of sunlight, the crunch of leaves underfoot. But the deeper they walked, the quieter it became. No birds sang. No insects buzzed. Even their own footsteps seemed to grow softer.\n\n\"Why is it so quiet here?\" Mika whispered.\n\nRen didn't know, but he noticed something else: dozens of small footprints crossing the path ahead, along with tufts of soft gray fur caught on a low branch.\n\nThey followed the footprints carefully until they reached a wide, shallow pond surrounded by tall reeds. There, resting quietly among the reeds, was a family of gray foxes. The animals froze, watching the children with calm, curious eyes.\n\nRen realized why the forest was so quiet — every creature here moved carefully to avoid disturbing the foxes' resting place, and the thick reeds muffled every sound.\n\nHe and Mika sat down slowly, careful not to startle the family, and watched them for a long while. Neither animal nor child made a sound.\n\nWhen they finally walked home at sunset, Mika said softly, \"That was the best kind of quiet.\"\n\nRen agreed. They promised to return, and to keep the forest's secret safe.",
+    "questions": [
+      {
+        "id": "bookworm:the-quiet-forest:q1",
+        "prompt": "What did Ren and Mika pack before entering the forest?",
+        "options": [
+          "A map, tent, and flashlight",
+          "Water, bread, and a compass",
+          "Binoculars and a camera",
+          "Nothing, they left empty-handed"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "bookworm:the-quiet-forest:q2",
+        "prompt": "What did the children notice as they walked deeper into the forest?",
+        "options": [
+          "Loud animal noises",
+          "It became quieter and quieter",
+          "The path became wider",
+          "More people appeared"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "bookworm:the-quiet-forest:q3",
+        "prompt": "What animals did they find near the pond?",
+        "options": ["Rabbits", "Deer", "Gray foxes", "Wolves"],
+        "correctIndex": 2
+      },
+      {
+        "id": "bookworm:the-quiet-forest:q4",
+        "prompt": "Why was the forest so quiet, according to Ren?",
+        "options": [
+          "There were no animals at all",
+          "Every creature moved carefully to avoid disturbing the foxes",
+          "A storm had just passed",
+          "The children imagined it"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "bookworm:the-quiet-forest:q5",
+        "prompt": "What did Ren and Mika decide to do at the end of the story?",
+        "options": [
+          "Tell everyone about the foxes",
+          "Never return to the forest",
+          "Return and keep the forest's secret safe",
+          "Bring the foxes home"
+        ],
+        "correctIndex": 2
+      }
+    ]
+  }
 ]

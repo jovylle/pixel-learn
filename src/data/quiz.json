@@ -1,5 +1,162 @@
 [
-  { "id": "quiz:vocab-1", "category": "quiz", "title": "Vocabulary Round I", "level": 1, "perQuestionSeconds": 10 },
-  { "id": "quiz:vocab-2", "category": "quiz", "title": "Vocabulary Round II", "level": 2, "perQuestionSeconds": 10 },
-  { "id": "quiz:spelling-1", "category": "quiz", "title": "Spelling Sprint", "level": 2, "perQuestionSeconds": 8 }
+  {
+    "id": "quiz:vocab-1",
+    "category": "quiz",
+    "title": "Vocabulary Round I",
+    "level": 1,
+    "perQuestionSeconds": 10,
+    "questions": [
+      {
+        "id": "quiz:vocab-1:q1",
+        "prompt": "What is a synonym for \"happy\"?",
+        "options": ["Joyful", "Furious", "Tired", "Bitter"],
+        "correctIndex": 0,
+        "explanation": "\"Joyful\" means feeling or showing great happiness."
+      },
+      {
+        "id": "quiz:vocab-1:q2",
+        "prompt": "Which word means \"to begin\"?",
+        "options": ["Finish", "Commence", "Delay", "Cancel"],
+        "correctIndex": 1,
+        "explanation": "\"Commence\" is a formal word for \"to begin.\""
+      },
+      {
+        "id": "quiz:vocab-1:q3",
+        "prompt": "Choose the opposite of \"expensive\".",
+        "options": ["Costly", "Cheap", "Rare", "Fancy"],
+        "correctIndex": 1,
+        "explanation": "\"Cheap\" is the opposite of \"expensive\"."
+      },
+      {
+        "id": "quiz:vocab-1:q4",
+        "prompt": "What does \"enormous\" mean?",
+        "options": ["Very small", "Very old", "Very large", "Very quiet"],
+        "correctIndex": 2,
+        "explanation": "\"Enormous\" describes something extremely large."
+      },
+      {
+        "id": "quiz:vocab-1:q5",
+        "prompt": "Which word best fits: \"She was ___ about her exam results.\"",
+        "options": ["anxious", "furniture", "kitchen", "yesterday"],
+        "correctIndex": 0,
+        "explanation": "\"Anxious\" fits the emotional context of worrying about results."
+      },
+      {
+        "id": "quiz:vocab-1:q6",
+        "prompt": "What is a synonym for \"assist\"?",
+        "options": ["Ignore", "Help", "Refuse", "Confuse"],
+        "correctIndex": 1,
+        "explanation": "\"Assist\" means to help someone."
+      }
+    ]
+  },
+  {
+    "id": "quiz:vocab-2",
+    "category": "quiz",
+    "title": "Vocabulary Round II",
+    "level": 2,
+    "perQuestionSeconds": 10,
+    "questions": [
+      {
+        "id": "quiz:vocab-2:q1",
+        "prompt": "What does \"reluctant\" mean?",
+        "options": ["Eager", "Unwilling", "Confident", "Careless"],
+        "correctIndex": 1,
+        "explanation": "\"Reluctant\" means unwilling to do something."
+      },
+      {
+        "id": "quiz:vocab-2:q2",
+        "prompt": "Choose the best synonym for \"ancient\".",
+        "options": ["Modern", "Recent", "Old", "Broken"],
+        "correctIndex": 2,
+        "explanation": "\"Ancient\" means very old."
+      },
+      {
+        "id": "quiz:vocab-2:q3",
+        "prompt": "Which word means \"to make something clear\"?",
+        "options": ["Clarify", "Confuse", "Hide", "Ignore"],
+        "correctIndex": 0,
+        "explanation": "\"Clarify\" means to make something easier to understand."
+      },
+      {
+        "id": "quiz:vocab-2:q4",
+        "prompt": "What is the opposite of \"generous\"?",
+        "options": ["Kind", "Stingy", "Wealthy", "Friendly"],
+        "correctIndex": 1,
+        "explanation": "\"Stingy\" is the opposite of \"generous\"."
+      },
+      {
+        "id": "quiz:vocab-2:q5",
+        "prompt": "Which word best fits: \"The plan was too ___ to succeed.\"",
+        "options": ["ambitious", "yellow", "table", "swimming"],
+        "correctIndex": 0,
+        "explanation": "\"Ambitious\" describes a plan that aims very high, often unrealistically."
+      },
+      {
+        "id": "quiz:vocab-2:q6",
+        "prompt": "What does \"persuade\" mean?",
+        "options": ["To convince", "To forget", "To destroy", "To measure"],
+        "correctIndex": 0,
+        "explanation": "\"Persuade\" means to convince someone to do or believe something."
+      },
+      {
+        "id": "quiz:vocab-2:q7",
+        "prompt": "Choose the synonym for \"fragile\".",
+        "options": ["Sturdy", "Delicate", "Heavy", "Loud"],
+        "correctIndex": 1,
+        "explanation": "\"Fragile\" means easily broken, like \"delicate\"."
+      }
+    ]
+  },
+  {
+    "id": "quiz:spelling-1",
+    "category": "quiz",
+    "title": "Spelling Sprint",
+    "level": 2,
+    "perQuestionSeconds": 8,
+    "questions": [
+      {
+        "id": "quiz:spelling-1:q1",
+        "prompt": "Which spelling is correct?",
+        "options": ["Recieve", "Receive", "Receeve", "Receve"],
+        "correctIndex": 1,
+        "explanation": "\"Receive\" follows the \"i before e except after c\" rule."
+      },
+      {
+        "id": "quiz:spelling-1:q2",
+        "prompt": "Which spelling is correct?",
+        "options": ["Definitely", "Definately", "Definitly", "Definetly"],
+        "correctIndex": 0,
+        "explanation": "\"Definitely\" is the correct spelling."
+      },
+      {
+        "id": "quiz:spelling-1:q3",
+        "prompt": "Which spelling is correct?",
+        "options": ["Seperate", "Separrate", "Separate", "Seperete"],
+        "correctIndex": 2,
+        "explanation": "\"Separate\" is the correct spelling."
+      },
+      {
+        "id": "quiz:spelling-1:q4",
+        "prompt": "Which spelling is correct?",
+        "options": ["Occassion", "Occasion", "Ocasion", "Occaision"],
+        "correctIndex": 1,
+        "explanation": "\"Occasion\" has one \"c\" and two \"s\"."
+      },
+      {
+        "id": "quiz:spelling-1:q5",
+        "prompt": "Which spelling is correct?",
+        "options": ["Neccessary", "Necessary", "Necesary", "Neccesary"],
+        "correctIndex": 1,
+        "explanation": "\"Necessary\" has one \"c\" and two \"s\"."
+      },
+      {
+        "id": "quiz:spelling-1:q6",
+        "prompt": "Which spelling is correct?",
+        "options": ["Embarass", "Embarrass", "Embarras", "Embbarass"],
+        "correctIndex": 1,
+        "explanation": "\"Embarrass\" has two \"r\"s and two \"s\"s."
+      }
+    ]
+  }
 ]

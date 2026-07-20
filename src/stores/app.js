@@ -208,7 +208,7 @@ export const useAppStore = defineStore('app', () => {
    * meant to call this on completion; features themselves are stubs in this
    * pass, but the pipeline is fully wired for when they land.
    */
-  function recordCompletion({ itemId, category, bestScore, selfScore, message, xp, readingSeconds }) {
+  function recordCompletion({ itemId, category, bestScore, selfScore, message, xp, readingSeconds, status = 'complete' }) {
     const now = new Date().toISOString()
     let record = progress.value.find((p) => p.itemId === itemId)
     if (!record) {
@@ -224,8 +224,8 @@ export const useAppStore = defineStore('app', () => {
     }
     record.attempts += 1
     record.updatedAt = now
-    record.status = 'complete'
-    record.completedAt = now
+    record.status = status
+    if (status === 'complete') record.completedAt = now
     if (bestScore !== undefined) record.bestScore = Math.max(record.bestScore ?? 0, bestScore)
     if (selfScore !== undefined) record.selfScore = selfScore
     persistProgress()

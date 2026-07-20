@@ -91,9 +91,9 @@ interface BookPassage extends ContentItemBase {
   questions: MCQuestion[];    // comprehension check
 }
 
-interface QuizQuestion extends ContentItemBase {
+interface QuizRound extends ContentItemBase {
   category: "quiz";
-  question: MCQuestion;
+  questions: MCQuestion[];    // pulled from as a bank/round, see CONTENT_AUTHORING.md
   perQuestionSeconds: number;
 }
 
@@ -107,7 +107,7 @@ interface GrammarTopic extends ContentItemBase {
 
 interface ListeningClip extends ContentItemBase {
   category: "listening";
-  audioSrc: string;           // path in src/assets/audio/
+  audioSrc: string;           // path in public/audio/, see AUDIO_ASSETS_AND_MEDIA.md
   durationSeconds: number;
   transcript: string;         // hidden by default
   questions: MCQuestion[];
@@ -218,7 +218,7 @@ interface AppState {
   content: {                  // hydrated from bundled JSON (read-only)
     categories: Category[];
     bookworm: BookPassage[];
-    quiz: QuizQuestion[];
+    quiz: QuizRound[];
     grammar: GrammarTopic[];
     listening: ListeningClip[];
     speaking: SpeakingPrompt[];

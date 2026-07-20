@@ -1,7 +1,239 @@
 [
-  { "id": "grammar:present-simple", "category": "grammar", "title": "Present Simple", "level": 1, "order": 1, "masteryThreshold": 70 },
-  { "id": "grammar:articles", "category": "grammar", "title": "Articles", "level": 1, "order": 2, "masteryThreshold": 70 },
-  { "id": "grammar:prepositions", "category": "grammar", "title": "Prepositions", "level": 2, "order": 3, "masteryThreshold": 70 },
-  { "id": "grammar:past-simple", "category": "grammar", "title": "Past Simple", "level": 2, "order": 4, "masteryThreshold": 70 },
-  { "id": "grammar:comparatives", "category": "grammar", "title": "Comparatives", "level": 3, "order": 5, "masteryThreshold": 70 }
+  {
+    "id": "grammar:present-simple",
+    "category": "grammar",
+    "title": "Present Simple",
+    "level": 1,
+    "order": 1,
+    "masteryThreshold": 70,
+    "lesson": {
+      "explanation": "Use the present simple for habits, routines, and general facts. Add -s or -es to the verb for he/she/it.",
+      "examples": [
+        "I drink coffee every morning.",
+        "She walks to school.",
+        "The sun rises in the east.",
+        "They play football on weekends."
+      ]
+    },
+    "drills": [
+      {
+        "kind": "fill-blank",
+        "id": "grammar:present-simple:d1",
+        "sentence": "He ___ (work) at a bakery.",
+        "answer": "works",
+        "hint": "Add -s for he/she/it."
+      },
+      {
+        "kind": "multiple-choice",
+        "id": "grammar:present-simple:d2",
+        "question": {
+          "id": "grammar:present-simple:d2:q",
+          "prompt": "Which sentence is correct?",
+          "options": ["She go to work by bus.", "She goes to work by bus.", "She going to work by bus.", "She gone to work by bus."],
+          "correctIndex": 1,
+          "explanation": "'Go' becomes 'goes' for the third person singular (he/she/it)."
+        }
+      },
+      {
+        "kind": "reorder",
+        "id": "grammar:present-simple:d3",
+        "tokens": ["breakfast", "every", "eats", "he", "day"],
+        "correctOrder": [3, 2, 0, 1, 4]
+      },
+      {
+        "kind": "fill-blank",
+        "id": "grammar:present-simple:d4",
+        "sentence": "We ___ (not like) spicy food.",
+        "answer": "do not like",
+        "hint": "Negative present simple uses 'do not' + base verb (we/you/they)."
+      }
+    ]
+  },
+  {
+    "id": "grammar:articles",
+    "category": "grammar",
+    "title": "Articles",
+    "level": 1,
+    "order": 2,
+    "masteryThreshold": 70,
+    "lesson": {
+      "explanation": "Use 'a' before a consonant sound and 'an' before a vowel sound for a single, non-specific noun. Use 'the' for something specific or already mentioned.",
+      "examples": [
+        "I saw a cat in the garden.",
+        "She ate an apple.",
+        "The book on the table is mine.",
+        "He is an honest man."
+      ]
+    },
+    "drills": [
+      {
+        "kind": "fill-blank",
+        "id": "grammar:articles:d1",
+        "sentence": "Can you pass me ___ umbrella? It's raining.",
+        "answer": "an",
+        "hint": "'Umbrella' starts with a vowel sound."
+      },
+      {
+        "kind": "multiple-choice",
+        "id": "grammar:articles:d2",
+        "question": {
+          "id": "grammar:articles:d2:q",
+          "prompt": "Choose the correct article: I need ___ new laptop.",
+          "options": ["a", "an", "the", "no article"],
+          "correctIndex": 0,
+          "explanation": "'New' starts with a consonant sound, so 'a' is correct."
+        }
+      },
+      {
+        "kind": "fill-blank",
+        "id": "grammar:articles:d3",
+        "sentence": "___ Eiffel Tower is in Paris.",
+        "answer": "The",
+        "hint": "Use 'the' for a specific, unique landmark."
+      }
+    ]
+  },
+  {
+    "id": "grammar:prepositions",
+    "category": "grammar",
+    "title": "Prepositions",
+    "level": 2,
+    "order": 3,
+    "masteryThreshold": 70,
+    "lesson": {
+      "explanation": "Prepositions like 'in', 'on', and 'at' show relationships of place and time. Use 'in' for enclosed spaces or months/years, 'on' for surfaces or days, and 'at' for exact points or times.",
+      "examples": [
+        "The keys are in the drawer.",
+        "The book is on the table.",
+        "We arrive at 6pm.",
+        "Her birthday is in July."
+      ]
+    },
+    "drills": [
+      {
+        "kind": "multiple-choice",
+        "id": "grammar:prepositions:d1",
+        "question": {
+          "id": "grammar:prepositions:d1:q",
+          "prompt": "The meeting starts ___ 9 o'clock.",
+          "options": ["in", "on", "at", "by"],
+          "correctIndex": 2,
+          "explanation": "Use 'at' for exact clock times."
+        }
+      },
+      {
+        "kind": "fill-blank",
+        "id": "grammar:prepositions:d2",
+        "sentence": "I was born ___ 1998.",
+        "answer": "in",
+        "hint": "Use 'in' for years."
+      },
+      {
+        "kind": "reorder",
+        "id": "grammar:prepositions:d3",
+        "tokens": ["The", "cat", "is", "on", "the", "sofa"],
+        "correctOrder": [0, 1, 2, 3, 4, 5]
+      },
+      {
+        "kind": "fill-blank",
+        "id": "grammar:prepositions:d4",
+        "sentence": "She lives ___ Tokyo.",
+        "answer": "in",
+        "hint": "Use 'in' for cities and countries."
+      }
+    ]
+  },
+  {
+    "id": "grammar:past-simple",
+    "category": "grammar",
+    "title": "Past Simple",
+    "level": 2,
+    "order": 4,
+    "masteryThreshold": 70,
+    "lesson": {
+      "explanation": "Use the past simple for finished actions at a specific time in the past. Regular verbs add -ed; irregular verbs change form.",
+      "examples": [
+        "I visited my grandmother last weekend.",
+        "She went to the market yesterday.",
+        "They watched a movie last night.",
+        "He didn't finish his homework."
+      ]
+    },
+    "drills": [
+      {
+        "kind": "fill-blank",
+        "id": "grammar:past-simple:d1",
+        "sentence": "Yesterday, we ___ (walk) to the park.",
+        "answer": "walked",
+        "hint": "Regular verbs add -ed in the past simple."
+      },
+      {
+        "kind": "multiple-choice",
+        "id": "grammar:past-simple:d2",
+        "question": {
+          "id": "grammar:past-simple:d2:q",
+          "prompt": "Choose the correct past tense of 'go'.",
+          "options": ["goed", "went", "gone", "going"],
+          "correctIndex": 1,
+          "explanation": "'Go' is irregular — its past simple form is 'went'."
+        }
+      },
+      {
+        "kind": "reorder",
+        "id": "grammar:past-simple:d3",
+        "tokens": ["last", "she", "night", "cooked", "dinner"],
+        "correctOrder": [1, 3, 4, 0, 2]
+      }
+    ]
+  },
+  {
+    "id": "grammar:comparatives",
+    "category": "grammar",
+    "title": "Comparatives",
+    "level": 3,
+    "order": 5,
+    "masteryThreshold": 70,
+    "lesson": {
+      "explanation": "Use comparatives to compare two things. Short adjectives add -er; long adjectives use 'more' + adjective. Irregular forms like 'better' and 'worse' must be memorized.",
+      "examples": [
+        "This bag is bigger than that one.",
+        "She is more careful than her brother.",
+        "The weather today is worse than yesterday.",
+        "He runs faster than me."
+      ]
+    },
+    "drills": [
+      {
+        "kind": "fill-blank",
+        "id": "grammar:comparatives:d1",
+        "sentence": "This puzzle is ___ (hard) than the last one.",
+        "answer": "harder",
+        "hint": "Short adjectives take -er."
+      },
+      {
+        "kind": "multiple-choice",
+        "id": "grammar:comparatives:d2",
+        "question": {
+          "id": "grammar:comparatives:d2:q",
+          "prompt": "Choose the correct comparative: This movie is ___ than the book.",
+          "options": ["more interesting", "interestinger", "most interesting", "interesting more"],
+          "correctIndex": 0,
+          "explanation": "Longer adjectives use 'more' + adjective instead of -er."
+        }
+      },
+      {
+        "kind": "fill-blank",
+        "id": "grammar:comparatives:d3",
+        "sentence": "Her cooking is ___ (good) than mine.",
+        "answer": "better",
+        "hint": "'Good' has an irregular comparative form."
+      },
+      {
+        "kind": "reorder",
+        "id": "grammar:comparatives:d4",
+        "tokens": ["than", "taller", "brother", "his", "is", "he"],
+        "correctOrder": [5, 4, 1, 0, 3, 2]
+      }
+    ]
+  }
 ]

@@ -1,6 +1,216 @@
 [
-  { "id": "listening:cafe-order", "category": "listening", "title": "Ordering at a Cafe", "level": 1, "durationSeconds": 45 },
-  { "id": "listening:train-station", "category": "listening", "title": "At the Train Station", "level": 1, "durationSeconds": 60 },
-  { "id": "listening:job-interview", "category": "listening", "title": "A Short Interview", "level": 2, "durationSeconds": 75 },
-  { "id": "listening:weather-report", "category": "listening", "title": "Weather Report", "level": 2, "durationSeconds": 50 }
+  {
+    "id": "listening:cafe-order",
+    "category": "listening",
+    "title": "Ordering at a Cafe",
+    "level": 1,
+    "durationSeconds": 45,
+    "audioSrc": "/audio/listening/cafe-order.mp3",
+    "transcript": "Barista: Hi there, welcome to Maple Cafe! What can I get started for you?\nCustomer: Hi, can I get a medium latte, please?\nBarista: Sure thing. Would you like that hot or iced?\nCustomer: Hot, please. And could I add an extra shot of espresso?\nBarista: Of course, that's an extra fifty cents. Anything else?\nCustomer: Yes, one blueberry muffin too.\nBarista: Great choice. That'll be six dollars and twenty cents total.\nCustomer: Here you go. Oh, and could I get that muffin warmed up?\nBarista: Absolutely, I'll pop it in the oven for a minute. Your name for the order?\nCustomer: It's Priya.\nBarista: Perfect, Priya. Your latte and muffin will be ready at the counter in about five minutes.",
+    "questions": [
+      {
+        "id": "listening:cafe-order:q1",
+        "prompt": "What drink did the customer order?",
+        "options": ["A small cappuccino", "A medium latte", "An iced tea", "A large mocha"],
+        "correctIndex": 1,
+        "explanation": "The customer asked for a medium latte."
+      },
+      {
+        "id": "listening:cafe-order:q2",
+        "prompt": "What extra did the customer add to the drink?",
+        "options": ["Whipped cream", "An extra shot of espresso", "Vanilla syrup", "Ice"],
+        "correctIndex": 1,
+        "explanation": "The customer asked for an extra shot of espresso, for fifty cents more."
+      },
+      {
+        "id": "listening:cafe-order:q3",
+        "prompt": "What food item did the customer buy?",
+        "options": ["A bagel", "A croissant", "A blueberry muffin", "A cookie"],
+        "correctIndex": 2,
+        "explanation": "The customer also ordered a blueberry muffin."
+      },
+      {
+        "id": "listening:cafe-order:q4",
+        "prompt": "What was the total price?",
+        "options": ["$5.20", "$6.20", "$7.00", "$4.50"],
+        "correctIndex": 1,
+        "explanation": "The barista said the total was six dollars and twenty cents."
+      },
+      {
+        "id": "listening:cafe-order:q5",
+        "prompt": "What name did the customer give for the order?",
+        "options": ["Maple", "Priya", "Riverside", "Sam"],
+        "correctIndex": 1,
+        "explanation": "The customer's name was Priya."
+      }
+    ]
+  },
+  {
+    "id": "listening:train-station",
+    "category": "listening",
+    "title": "At the Train Station",
+    "level": 1,
+    "durationSeconds": 60,
+    "audioSrc": "/audio/listening/train-station.mp3",
+    "transcript": "Announcer: Attention passengers, the 10:15 train to Riverside is now boarding on platform 3.\nTraveler: Excuse me, is this the platform for the train to Riverside?\nStation Staff: Yes, but you'll need to hurry, it leaves in about six minutes.\nTraveler: Thank you! Do I need to change trains anywhere?\nStation Staff: No, it's a direct route, about forty minutes non-stop.\nTraveler: Great. One more thing, where can I buy a ticket?\nStation Staff: There's a machine right behind you, or you can buy one on board for a small extra fee.\nTraveler: I'll use the machine. Thanks for your help!\nAnnouncer: Final boarding call for the 10:15 to Riverside, platform 3. The next train to Riverside departs at 11:45.",
+    "questions": [
+      {
+        "id": "listening:train-station:q1",
+        "prompt": "Which platform is the Riverside train boarding on?",
+        "options": ["Platform 1", "Platform 2", "Platform 3", "Platform 4"],
+        "correctIndex": 2,
+        "explanation": "The announcer says the train is boarding on platform 3."
+      },
+      {
+        "id": "listening:train-station:q2",
+        "prompt": "What time does the boarding train depart?",
+        "options": ["9:45", "10:15", "10:45", "11:45"],
+        "correctIndex": 1,
+        "explanation": "The 10:15 train to Riverside is the one currently boarding."
+      },
+      {
+        "id": "listening:train-station:q3",
+        "prompt": "Does the traveler need to change trains?",
+        "options": [
+          "Yes, once",
+          "Yes, twice",
+          "No, it's a direct route",
+          "The staff wasn't sure"
+        ],
+        "correctIndex": 2,
+        "explanation": "The station staff confirms it's a direct, non-stop route."
+      },
+      {
+        "id": "listening:train-station:q4",
+        "prompt": "About how long is the trip to Riverside?",
+        "options": ["Fifteen minutes", "Forty minutes", "One hour", "Two hours"],
+        "correctIndex": 1,
+        "explanation": "The staff says the direct route takes about forty minutes."
+      },
+      {
+        "id": "listening:train-station:q5",
+        "prompt": "Where does the traveler decide to buy a ticket?",
+        "options": [
+          "On board the train",
+          "At the ticket machine",
+          "From the announcer",
+          "At a nearby shop"
+        ],
+        "correctIndex": 1,
+        "explanation": "The traveler chooses to use the ticket machine instead of paying an extra fee on board."
+      }
+    ]
+  },
+  {
+    "id": "listening:job-interview",
+    "category": "listening",
+    "title": "A Short Interview",
+    "level": 2,
+    "durationSeconds": 75,
+    "audioSrc": "/audio/listening/job-interview.mp3",
+    "transcript": "Interviewer: Thanks for coming in today. Can you start by telling me a little about your background?\nCandidate: Sure. I studied graphic design for three years and worked as an intern at a small design studio last summer.\nInterviewer: What did you enjoy most about that internship?\nCandidate: I really liked collaborating with the team on branding projects, seeing an idea grow from a sketch into a finished logo was exciting.\nInterviewer: That's great. Why are you interested in working with us specifically?\nCandidate: I've followed your studio's work for a while, and I admire how you balance bold color choices with clean layouts.\nInterviewer: We appreciate that. Do you have any questions for me?\nCandidate: Yes, what does a typical first project look like for a new designer here?\nInterviewer: Usually a smaller client project, paired with a mentor for the first month. We'll be in touch by Friday with our decision.\nCandidate: Thank you so much for your time today.",
+    "questions": [
+      {
+        "id": "listening:job-interview:q1",
+        "prompt": "What did the candidate study?",
+        "options": ["Marketing", "Graphic design", "Accounting", "Architecture"],
+        "correctIndex": 1,
+        "explanation": "The candidate says they studied graphic design for three years."
+      },
+      {
+        "id": "listening:job-interview:q2",
+        "prompt": "Where did the candidate intern last summer?",
+        "options": [
+          "A large advertising agency",
+          "A small design studio",
+          "A newspaper",
+          "A photography studio"
+        ],
+        "correctIndex": 1,
+        "explanation": "The candidate interned at a small design studio."
+      },
+      {
+        "id": "listening:job-interview:q3",
+        "prompt": "What did the candidate enjoy most about the internship?",
+        "options": [
+          "Working alone",
+          "Collaborating on branding projects",
+          "The office location",
+          "Fixing computers"
+        ],
+        "correctIndex": 1,
+        "explanation": "The candidate liked collaborating with the team on branding projects."
+      },
+      {
+        "id": "listening:job-interview:q4",
+        "prompt": "Why is the candidate interested in this studio specifically?",
+        "options": [
+          "The high salary",
+          "It's close to home",
+          "They admire the studio's bold colors and clean layouts",
+          "A friend works there"
+        ],
+        "correctIndex": 2,
+        "explanation": "The candidate admires how the studio balances bold color choices with clean layouts."
+      },
+      {
+        "id": "listening:job-interview:q5",
+        "prompt": "When will the interviewer follow up with a decision?",
+        "options": ["The same day", "By Friday", "In one month", "They didn't say"],
+        "correctIndex": 1,
+        "explanation": "The interviewer says they'll be in touch by Friday."
+      }
+    ]
+  },
+  {
+    "id": "listening:weather-report",
+    "category": "listening",
+    "title": "Weather Report",
+    "level": 2,
+    "durationSeconds": 50,
+    "audioSrc": "/audio/listening/weather-report.mp3",
+    "transcript": "Good morning, and here's your weather report for today. We're starting off with clear skies and a cool 8 degrees Celsius, but temperatures will climb quickly to a high of 19 degrees by early afternoon. Expect plenty of sunshine through midday, with a few scattered clouds rolling in around four o'clock. There's a light breeze from the west at about 10 kilometers per hour, so it should feel pleasant outside. Tonight, temperatures will drop back down to around 10 degrees, with a slight chance of light rain after midnight, only a twenty percent chance, so don't cancel your evening plans just yet. Tomorrow looks cooler and cloudier, with a high near 14 degrees. That's your forecast, enjoy the sunshine while it lasts!",
+    "questions": [
+      {
+        "id": "listening:weather-report:q1",
+        "prompt": "What is this morning's temperature?",
+        "options": ["8 degrees", "14 degrees", "19 degrees", "10 degrees"],
+        "correctIndex": 0,
+        "explanation": "The report starts with a cool 8 degrees Celsius in the morning."
+      },
+      {
+        "id": "listening:weather-report:q2",
+        "prompt": "What is the expected high temperature today?",
+        "options": ["10 degrees", "14 degrees", "19 degrees", "24 degrees"],
+        "correctIndex": 2,
+        "explanation": "Temperatures climb to a high of 19 degrees by early afternoon."
+      },
+      {
+        "id": "listening:weather-report:q3",
+        "prompt": "When do scattered clouds start rolling in?",
+        "options": ["Right at sunrise", "Around noon", "Around four o'clock", "After midnight"],
+        "correctIndex": 2,
+        "explanation": "A few scattered clouds roll in around four o'clock."
+      },
+      {
+        "id": "listening:weather-report:q4",
+        "prompt": "What is the chance of light rain tonight?",
+        "options": ["Zero percent", "Twenty percent", "Fifty percent", "Eighty percent"],
+        "correctIndex": 1,
+        "explanation": "There's only a twenty percent chance of light rain after midnight."
+      },
+      {
+        "id": "listening:weather-report:q5",
+        "prompt": "How does tomorrow's weather compare to today's?",
+        "options": [
+          "Warmer and sunnier",
+          "Cooler and cloudier",
+          "Exactly the same",
+          "Much colder with snow"
+        ],
+        "correctIndex": 1,
+        "explanation": "Tomorrow looks cooler and cloudier, with a high near 14 degrees."
+      }
+    ]
+  }
 ]
