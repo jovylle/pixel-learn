@@ -18,5 +18,8 @@ const showChrome = computed(() => route.name !== 'welcome')
     <main :class="showChrome ? 'pt-16' : ''">
       <RouterView />
     </main>
+    <footer v-if="showChrome" class="relative py-6 text-center font-body text-xs text-text-secondary">
+      <a href="https://pixel-learn.uft1.com" class="hover:text-accent-blue">pixel-learn.uft1.com</a>
+    </footer>
   </div>
 </template>
